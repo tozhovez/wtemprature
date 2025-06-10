@@ -24,7 +24,7 @@ class WeatherAPI:
         list_of_dicts = read_data_from_csv_file("/infra/cities.csv")
 
         for row in list_of_dicts:
-            print(row['id'])
+           
             if row['id'] in city_ids:
                 try:
                     cities.append(City(
